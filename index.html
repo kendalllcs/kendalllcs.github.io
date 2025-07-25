@@ -4,29 +4,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kendall Lawson | Welcome </title>
+  <title>Kendall Lawson | Welcome</title>
   <!-- Favicon -->
   <link rel="icon" href="https://kendalllcs.github.io/assets/logo.jpg" type="image/jpeg" />
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Custom overrides -->
   <style>
-    /* Make navbar background a semi‑transparent gray with rounded corners */
+    /* Load your custom font from GitHub Pages */
+    @font-face {
+      font-family: 'AkiraExpandedDemo';
+      src: url('https://kendalllcs.github.io/assets/fonts/Akira Expanded Demo.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Universal white text */
+    body, h1, p, ul, li, a, button, span, div {
+      color: #ffffff !important;
+    }
+
+    /* Big titles use your font */
+    h1 {
+      font-family: 'AkiraExpandedDemo', sans-serif !important;
+    }
+
+    /* Navbar links use your font */
+    nav a {
+      font-family: 'AkiraExpandedDemo', sans-serif;
+      color: #ffffff !important;
+    }
+    nav a:hover {
+      color: #ffffff !important;
+    }
+
+    /* Preserve your existing styling overrides */
     nav.bg-white {
       background-color: rgba(128, 128, 128, 0.5) !important;
       border-radius: 1rem !important;
     }
-    /* Make main content card background a semi‑transparent gray */
     .relative.z-10.bg-white.rounded-2xl {
       background-color: rgba(128, 128, 128, 0.5) !important;
-    }
-    /* Force all clickable text to white */
-    a {
-      color: #ffffff !important;
-    }
-    a:hover {
-      color: #ffffff !important;
     }
   </style>
 </head>
@@ -37,9 +56,9 @@
   <!-- NAVIGATION BAR -->
   <nav class="relative z-10 bg-white shadow fixed w-full">
     <div class="max-w-3xl mx-auto px-4 py-4 flex justify-center space-x-8">
-      <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium">Links</a>
-      <a href="about.html" class="text-gray-700 hover:text-indigo-600 font-medium">About Me</a>
-      <a href="try-ai.html" class="text-gray-700 hover:text-indigo-600 font-medium">Try AI</a>
+      <a href="index.html" class="font-medium">Links</a>
+      <a href="about.html" class="font-medium">About Me</a>
+      <a href="try-ai.html" class="font-medium">Try AI</a>
     </div>
   </nav>
 
@@ -54,34 +73,30 @@
            alt="my professional headshot"
            class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-indigo-500">
     </div>
-    <!-- Name -->
+    <!-- Name Title -->
     <h1 class="text-2xl font-semibold mb-4">Kendall Lawson</h1>
     <!-- Link Buttons -->
     <div class="space-y-4">
       <a href="https://www.youtube.com/@srgeyt" target="_blank"
-         class="block px-6 py-3 bg-red-600 text-white rounded-full hover:bg-red-700 transition">
+         class="block px-6 py-3 bg-red-600 rounded-full hover:bg-red-700 transition">
         YouTube
       </a>
       <a href="https://www.linkedin.com/in/kendalllawsoncs/" target="_blank"
-         class="block px-6 py-3 bg-blue-700 text-white rounded-full hover:bg-blue-800 transition">
+         class="block px-6 py-3 bg-blue-700 rounded-full hover:bg-blue-800 transition">
         LinkedIn
       </a>
       <a href="https://github.com/kendalllcs" target="_blank"
-         class="block px-6 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-900 transition">
+         class="block px-6 py-3 bg-gray-800 rounded-full hover:bg-gray-900 transition">
         GitHub
       </a>
       <a href="https://www.instagram.com/kendalllawson/" target="_blank"
-         class="block px-6 py-3 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition">
+         class="block px-6 py-3 bg-pink-500 rounded-full hover:bg-pink-600 transition">
         Instagram
       </a>
     </div>
-    <!-- Additional Content Placeholder -->
-    <div id="extra-content" class="mt-6 text-sm text-gray-500">
-      <!-- Add more sections or links here -->
-    </div>
   </div>
 
-  <!-- Vanta.js Scripts: HALO version, high‑res settings -->
+  <!-- Vanta.js Scripts -->
   <script src="assets/three.r134.min.js"></script>
   <script src="assets/vanta.halo.min.js"></script>
   <script>
@@ -93,7 +108,6 @@
         gyroControls: false,
         minHeight: 200.00,
         minWidth: 200.00,
-        // HIGH‑RES SETTINGS
         scale: 2.00,
         scaleMobile: 2.00,
         backgroundColor: 0x1a1a2e,

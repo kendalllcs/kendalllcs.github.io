@@ -1,3 +1,4 @@
+<!-- try-ai.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,30 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    html { scroll-behavior: smooth; }
+    @font-face {
+      font-family: 'AkiraExpandedDemo';
+      src: url('https://kendalllcs.github.io/assets/fonts/Akira Expanded Demo.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    body, h1, p, a {
+      color: #ffffff !important;
+    }
+
+    h1 {
+      font-family: 'AkiraExpandedDemo', sans-serif !important;
+    }
+
+    nav a {
+      font-family: 'AkiraExpandedDemo', sans-serif;
+      color: #ffffff !important;
+    }
+    nav a:hover {
+      color: #ffffff !important;
+    }
+
     nav.bg-white {
       background-color: rgba(128, 128, 128, 0.5) !important;
       border-radius: 1rem !important;
@@ -18,8 +42,6 @@
     .relative.z-10.bg-white.rounded-2xl {
       background-color: rgba(255, 255, 255, 1) !important;
     }
-    a { color: #ffffff !important; }
-    a:hover { color: #ffffff !important; }
   </style>
 </head>
 <body class="relative overflow-x-hidden flex flex-col items-center justify-start min-h-screen p-4">
@@ -29,9 +51,9 @@
   <!-- NAV BAR -->
   <nav class="relative z-10 bg-white shadow fixed w-full">
     <div class="max-w-3xl mx-auto px-4 py-4 flex justify-center space-x-8">
-      <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium">Links</a>
-      <a href="about.html" class="text-gray-700 hover:text-indigo-600 font-medium">About Me</a>
-      <a href="try-ai.html" class="text-gray-700 hover:text-indigo-600 font-medium">Try AI</a>
+      <a href="index.html" class="font-medium">Links</a>
+      <a href="about.html" class="font-medium">About Me</a>
+      <a href="try-ai.html" class="font-medium">Try AI</a>
     </div>
   </nav>
 

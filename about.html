@@ -11,7 +11,30 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    html { scroll-behavior: smooth; }
+    @font-face {
+      font-family: 'AkiraExpandedDemo';
+      src: url('https://kendalllcs.github.io/assets/fonts/Akira Expanded Demo.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    body, h1, p, ul, li, a {
+      color: #ffffff !important;
+    }
+
+    h1 {
+      font-family: 'AkiraExpandedDemo', sans-serif !important;
+    }
+
+    nav a {
+      font-family: 'AkiraExpandedDemo', sans-serif;
+      color: #ffffff !important;
+    }
+    nav a:hover {
+      color: #ffffff !important;
+    }
+
     nav.bg-white {
       background-color: rgba(128, 128, 128, 0.5) !important;
       border-radius: 1rem !important;
@@ -19,8 +42,6 @@
     .relative.z-10.bg-white.rounded-2xl {
       background-color: rgba(128, 128, 128, 0.5) !important;
     }
-    a { color: #ffffff !important; }
-    a:hover { color: #ffffff !important; }
   </style>
 </head>
 <body class="relative overflow-x-hidden flex flex-col items-center justify-start min-h-screen p-4">
@@ -30,9 +51,9 @@
   <!-- NAVIGATION BAR -->
   <nav class="relative z-10 bg-white shadow fixed w-full">
     <div class="max-w-3xl mx-auto px-4 py-4 flex justify-center space-x-8">
-      <a href="https://kendalllcs.github.io/index.html" class="text-gray-700 hover:text-indigo-600 font-medium">Links</a>
-      <a href="about.html" class="text-gray-700 hover:text-indigo-600 font-medium">About Me</a>
-      <a href="try-ai.html" class="text-gray-700 hover:text-indigo-600 font-medium">Try AI</a>
+      <a href="index.html" class="font-medium">Links</a>
+      <a href="about.html" class="font-medium">About Me</a>
+      <a href="try-ai.html" class="font-medium">Try AI</a>
     </div>
   </nav>
 
@@ -41,35 +62,35 @@
 
   <!-- ABOUT ME CONTENT CARD -->
   <div class="relative z-10 bg-white rounded-2xl shadow-lg p-8 max-w-xl w-full text-left overflow-y-auto">
-    <h1 class="text-3xl font-bold text-center text-white mb-6">Hey, I'm Kendall 👋</h1>
+    <h1 class="text-3xl font-bold text-center mb-6">Hey, I'm Kendall 👋</h1>
 
-    <p class="text-white mb-4">
+    <p class="mb-4">
       I'm a North Carolina native, current <strong>software engineering student at East Carolina University</strong>,
       and proud team member working behind the scenes at the one and only <strong>MrBeast</strong>. 🎬
     </p>
 
-    <p class="text-white mb-4">
+    <p class="mb-4">
       Before jumping into the world of creative chaos and viral videos, I worked as a <strong>pharmacy technician</strong> —
       from my high school days at Walgreens, to my college years at CVS, and beyond. I developed a sharp eye for detail,
       strong work ethic, and a calm approach to high-pressure environments — all of which now fuel my approach to engineering, tech, and teamwork.
     </p>
 
-    <p class="text-white mb-4">
+    <p class="mb-4">
       I’m passionate about <strong>building things, solving problems, and collaborating with awesome teams</strong>.
       Whether it's working on a software project, optimizing a workflow, or learning a new stack — I’m in.
     </p>
 
-    <p class="text-white mb-4">
+    <p class="mb-4">
       When I'm not coding or creating, you’ll probably find me:
     </p>
-    <ul class="list-disc list-inside text-white mb-4">
+    <ul class="list-disc list-inside mb-4">
       <li>Dropping into <strong>Fortnite</strong> for a few wins (or losses)</li>
       <li>Watching the latest <strong>horror movie</strong> — the scarier, the better 👻</li>
       <li>Hitting the <strong>golf course</strong> and chasing that perfect swing</li>
       <li>Diving into <strong>team projects</strong> that push my limits and grow my skills</li>
     </ul>
 
-    <p class="text-white">
+    <p>
       I'm always on the lookout for exciting opportunities, creative collabs, and cool people to build with. 
       Feel free to reach out or connect on LinkedIn — let’s make something great together.
     </p>
