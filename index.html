@@ -8,6 +8,26 @@
   <link rel="icon" href="https://kendalllcs.github.io/assets/logo.jpg" type="image/jpeg" />
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom overrides -->
+  <style>
+    /* Make navbar background a semi‑transparent gray with rounded corners */
+    nav.bg-white {
+      background-color: rgba(128, 128, 128, 0.5) !important;
+      border-radius: 1rem !important; /* <-- rounds all four corners */
+    }
+    /* Make main content card background a semi‑transparent gray */
+    .relative.z-10.bg-white.rounded-2xl {
+      background-color: rgba(128, 128, 128, 0.5) !important;
+    }
+    /* Force all clickable text to white */
+    a {
+      color: #ffffff !important;
+    }
+    a:hover {
+      color: #ffffff !important;
+    }
+  </style>
 </head>
 <body class="relative overflow-hidden flex flex-col items-center justify-start min-h-screen p-4">
   <!-- VANTA BACKGROUND CONTAINER -->
