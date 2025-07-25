@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kendall Lawson | Links</title>
   <!-- Favicon -->
-  <link rel="icon" href="https://kendalllcs.github.io/assets/logo.jpg" type="image/jpeg">
+  <link rel="icon" href="https://kendalllcs.github.io/assets/logo.jpg" type="image/jpeg" />
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="relative overflow-hidden flex flex-col items-center justify-start min-h-screen p-4">
-
   <!-- VANTA BACKGROUND CONTAINER -->
   <div id="vantabg" class="absolute inset-0 z-0"></div>
 
@@ -61,25 +60,26 @@
     </div>
   </div>
 
-  <!-- Vanta.js Scripts -->
+  <!-- Vanta.js Scripts: HALO version, high‑res settings -->
   <script src="assets/three.r134.min.js"></script>
-  <script src="assets/vanta.waves.min.js"></script>
+  <script src="assets/vanta.halo.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      VANTA.WAVES({
-        el: '#vantabg',
+      VANTA.HALO({
+        el: "#vantabg",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
         minHeight: 200.00,
         minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0x324055,
-        shininess: 140.00,
-        waveHeight: 38.50,
-        waveSpeed: 0.35,
-        zoom: 0.65
+        // HIGH‑RES SETTINGS
+        scale: 2.00,         // doubles internal resolution on desktop
+        scaleMobile: 2.00,   // doubles on mobile too
+        backgroundColor: 0x1a1a2e,  // deep midnight hue
+        size: 2.50,          // radius of each halo “orb”
+        spacing: 20.00,      // space between points
+        points: 20,          // number of halo nodes
+        maxDistance: 30.00   // how far halos connect
       });
     });
   </script>
